@@ -14,7 +14,7 @@ const cars = [
   },
   {
     name: "BMW 540ix Series",
-    description: "High-performance compact executive car with sporty design.",
+    description: "High-performance executive car with sporty design.",
     image: "/images/bmw-540ix-series.jpg",
     price: "$45,450",
   },
@@ -240,12 +240,14 @@ export default function App() {
       </div>
       <div className="search-bar">
         <input
+        className="required"
           type="text"
           placeholder="Search by car name"
           value={searchTerm}
           onChange={handleSearchTermChange}
         />
         <input
+        className="required"
           type="text"
           placeholder="Search by price"
           value={priceFilter}

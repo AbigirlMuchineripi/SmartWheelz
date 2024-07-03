@@ -24,7 +24,7 @@ const Chatbot = () => {
   return (
     <div id="chatbot" className={`chatbot ${isOpen ? "stop-animation" : ""}`}>
       <button className="chatbot-toggle" onClick={toggleChatbot}>
-        Chat with us
+       Chat
       </button>
       {isOpen && (
         <div id="chat" className="chat-window">

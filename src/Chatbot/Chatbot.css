@@ -33,17 +33,18 @@
       bottom:60px;
       right:0;
       width:200px;
-      background-color:rgba(67, 47, 67, 0.6);
+      background-color:rgba(14, 14, 14, 0.6);
       border:1px solid rgb(8, 65, 1);
-      border-radius:10px;
+      border-radius:2px;
       box-shadow: 0 8px 20px black;
       padding:10px;
   }
   .chat-window textarea{
       width: 94%;
       height: 100px;
-      background-color:rgba(89, 50, 50, 0.6);
+      background-color:rgba(0, 0, 0, 0.6);
       border:1px solid #ffffff;
+      color: white;
       border-radius: 5px;
       padding:5px;
       resize:none;
