@@ -30,7 +30,7 @@ body {
 .hamburger-menu {
   cursor: pointer;
   font-size: 24px;
-  color: #9fa8d0;
+  color: #0f6a01;
   margin-top: -5rem;
   margin-right: -1.5rem;
 }
@@ -61,7 +61,7 @@ a {
 
 .menu li {
   padding: 10px 0;
-  border-bottom: 1px solid #237d00;
+  border-bottom: 1px solid #0f6a01;
 }
 
 .menu li:last-child {
@@ -80,7 +80,7 @@ h1 {
   margin-left: -1.5rem;
 }
 span {
-  color: rgb(2, 192, 2);
+  color: #0f6a01;
   font-size:25px;
 }
 .wheel {
@@ -117,7 +117,7 @@ span {
 }
 input {
   background-color: #e6edfc;
-  border: 1px solid rgb(1, 130, 16);
+  border: 1px solid #0f6a01;
   border-radius: 5px;
 }
 .required::after{
