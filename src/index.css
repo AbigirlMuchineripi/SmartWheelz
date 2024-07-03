@@ -1,0 +1,277 @@
+/* General Styles */
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: black;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  align-items: center;
+  font-family: sans-serif;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #000000;
+  margin-top: -10px;
+  margin-bottom: 13px;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  font-size: 24px;
+  color: #9eaffd;
+  margin-top: -5rem;
+  margin-right: -1.5rem;
+}
+
+.menu {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  background-color: rgba(67, 47, 67, 0.6);
+  border-radius: 5px;
+  padding: 12px;
+  text-align: left;
+  z-index: 1000;
+}
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 10px 0;
+  border-bottom: 1px solid #237d00;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+h1 {
+  display: flex;
+  font-family:Times;
+  font-size: 30px;
+  letter-spacing: -1.5px;
+  color: #9eaffd;
+  padding-bottom: 4rem;
+  margin-top: 2px;
+  margin-left: -1.5rem;
+}
+span {
+  color: rgb(2, 192, 2);
+  font-size:25px;
+}
+.wheel {
+  animation: rotate 1ms infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.wheel1 {
+  animation: rotate 1ms infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.welcome{
+  text-align:center;
+  
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+  padding-right: 6rem;
+  padding-left: 6rem;
+  font-size: 12px;
+  color:aliceblue;
+  font-family: monospace;
+  text-shadow: 1px 1px 4px black;
+}
+input {
+  background-color: #e6edfc;
+  border: 2px solid rgb(1, 130, 16);
+  border-radius: 5px;
+}
+
+/* Car Listing Styles */
+.car-listing-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between grid items */
+}
+
+.car-listing {
+  height: fit-content;
+  background-color: rgb(49, 0, 0);
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.9s ease-in-out;
+}
+
+.car-listing:hover {
+  transform: translateY(-7px);
+}
+
+.car-listing img {
+  width: 100%;
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Ensures image covers the area */
+  border-radius: 5px;
+  box-shadow: 2px 12px 30px #000000;
+}
+
+.car-listing h3 {
+  margin: 10px 0;
+  font-size: 17px;
+  letter-spacing: -1px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  color: #fff200;
+}
+
+.car-listing p {
+  margin: 5px 0;
+
+  color: #9eaffd;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13px;
+}
+
+.car-listing button {
+  background-color: rgb(49, 1, 1);
+  color: #9eaffd;
+  font-size: 12px;
+  font-weight: 600;
+  width: 30%;
+  height: 30%;
+  border-radius: 5px;
+  border-color: black;
+  border-style: ridge;
+}
+
+/* Price Highlight */
+.car-listing h4 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 12px;
+  color: #f8fc00;
+  text-shadow:  black;
+}
+/* Sponsors Styles */
+.sponsors {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.sponsors h2 {
+  color: aliceblue;
+  font-family: monospace;
+  font-size: 16px;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.sponsor-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: black;
+}
+
+.sponsor img {
+  width: 70px;
+  height: auto;
+  background-color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .car-listing-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+  }
+
+  .car-listing {
+    font-size: 14px;
+  }
+
+  .car-listing img {
+    max-width: 100%;
+    height: 200px; /* Ensuring consistent height */
+    object-fit: cover; /* Ensures image covers the area */
+  }
+}
+
+@media (max-width: 480px) {
+  .car-listing-container {
+    grid-template-columns: 1fr; /* 1 column for very small screens */
+  }
+}
+
+
+/* Footer Styles */
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(67, 47, 67, 0.6);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: center;
+}
+h5 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  color: red;
+  margin-top: -0.8rem;
+  margin-bottom: -0.8em;
+}
+.footer-message {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10px;
+  color: aliceblue;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.rights {
+  font-family: "Times New Roman", Times, serif;
+  color: red;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: -10px;
+}
+.link {
+  color: rgb(129, 129, 240);
+  font-size: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
