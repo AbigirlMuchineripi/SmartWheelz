@@ -236,8 +236,7 @@ export default function App() {
         </div>
       )}
       <div className="welcome">
-        <h2>
-Indulge in automotive excellence with our exclusive lineup of luxury cars, now offering complimentary insurance. Embrace unparalleled sophistication and elevate your driving experience today.</h2>
+        <h2>Embrace unparalleled sophistication and elevate your driving experience today with our exclusive lineup of luxury cars, now offering complementary insurance.</h2>
       </div>
       <div className="search-bar">
         <input
